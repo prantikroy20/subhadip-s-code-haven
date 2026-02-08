@@ -27,13 +27,13 @@ const ContactSection = () => {
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12"
         >
           <a
-            href="mailto:noton8520@gmail.com"
+            href="mailto:subhadip.pan04@gmail.com"
             className="flex items-center gap-3 p-4 rounded-xl bg-background border border-border hover:border-primary/30 transition-all"
           >
             <Mail size={18} className="text-primary" />
             <div>
               <p className="text-xs text-muted-foreground">Email</p>
-              <p className="text-sm">noton8520@gmail.com</p>
+              <p className="text-sm">subhadip.pan04@gmail.com</p>
             </div>
           </a>
           <a
@@ -70,7 +70,7 @@ const ContactSection = () => {
             Portfolio
           </a>
           <a
-            href="https://linkedin.com/in/subhadip-pan"
+            href="https://www.linkedin.com/in/subhadippan-sp"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-surface border border-border hover:border-primary/50 text-sm transition-all"
@@ -79,7 +79,7 @@ const ContactSection = () => {
             LinkedIn
           </a>
           <a
-            href="https://github.com/subhadip-pan"
+            href="https://github.com/subhadip-pan09"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-surface border border-border hover:border-primary/50 text-sm transition-all"
