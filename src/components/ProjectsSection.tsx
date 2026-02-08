@@ -1,30 +1,29 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Layers, Users } from "lucide-react";
+import { Github, Shield, HeartPulse } from "lucide-react";
 
 const projects = [
   {
-    title: "Instagram Clone – Backend",
-    icon: Users,
-    tech: ["Java", "Spring Boot", "MySQL", "Docker"],
+    title: "Secure Application Access Control for SDN",
+    icon: Shield,
+    tech: ["Python", "XGBoost", "Scikit-learn", "Network Security"],
     description:
-      "Full-featured REST API backend for an Instagram-like social platform with user registration, authentication, posts, likes, and comments.",
+      "ML-based access control system to secure SDN Northbound Interfaces by detecting malicious and unauthorized application requests.",
     highlights: [
-      "Layered architecture with Spring Data JPA",
-      "Swagger & Postman for API testing",
-      "Dockerized deployment setup",
+      "Evaluated multiple ML models (Naïve Bayes, Random Forest, MLP, XGBoost), achieving improved detection accuracy using ensemble learning",
+      "Integrated a rule-based trust management engine to reduce false positives and improve decision explainability",
     ],
     github: "https://github.com/subhadip-pan",
   },
   {
-    title: "Student Management System",
-    icon: Layers,
-    tech: ["Java", "Spring Boot", "MySQL"],
+    title: "Healthcare Management Backend System",
+    icon: HeartPulse,
+    tech: ["Java", "Spring Boot", "SSMS", "JWT", "Docker"],
     description:
-      "Backend service to manage student and course records with full CRUD capability, validation, and exception handling.",
+      "Secure RESTful backend for managing patients, doctors, appointments, and medical records using Spring Boot.",
     highlights: [
-      "CRUD APIs with input validation",
-      "Custom exception handling",
-      "Clean, layered code structure",
+      "Implemented JWT-based authentication and role-based access control with Spring Security",
+      "Designed normalized MySQL schemas and implemented persistence using Spring Data JPA and Hibernate",
+      "Containerized the application using Docker and set up a basic CI workflow with GitHub Actions",
     ],
     github: "https://github.com/subhadip-pan",
   },
@@ -32,7 +31,7 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-24 px-4">
+    <section id="projects" className="py-24 px-4 bg-card/50">
       <div className="container mx-auto max-w-4xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -51,7 +50,7 @@ const ProjectsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.15 }}
-              className="p-6 md:p-8 rounded-xl bg-card border border-border hover:border-primary/30 glow-border transition-all group"
+              className="p-6 md:p-8 rounded-xl bg-background border border-border hover:border-primary/30 glow-border transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center gap-3">
@@ -72,10 +71,10 @@ const ProjectsSection = () => {
 
               <p className="text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
 
-              <ul className="space-y-1.5 mb-5">
-                {project.highlights.map((h) => (
-                  <li key={h} className="text-sm text-secondary-foreground/70 flex items-center gap-2">
-                    <span className="w-1 h-1 rounded-full bg-primary" />
+              <ul className="space-y-2 mb-5">
+                {project.highlights.map((h, idx) => (
+                  <li key={idx} className="text-sm text-secondary-foreground/70 flex items-start gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 flex-shrink-0" />
                     {h}
                   </li>
                 ))}

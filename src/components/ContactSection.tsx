@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Github, Linkedin, Download } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Globe } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-24 px-4">
+    <section id="contact" className="py-24 px-4 bg-card/50">
       <div className="container mx-auto max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,7 @@ const ContactSection = () => {
         >
           <a
             href="mailto:noton8520@gmail.com"
-            className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border hover:border-primary/30 transition-all"
+            className="flex items-center gap-3 p-4 rounded-xl bg-background border border-border hover:border-primary/30 transition-all"
           >
             <Mail size={18} className="text-primary" />
             <div>
@@ -38,7 +38,7 @@ const ContactSection = () => {
           </a>
           <a
             href="tel:+918391983177"
-            className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border hover:border-primary/30 transition-all"
+            className="flex items-center gap-3 p-4 rounded-xl bg-background border border-border hover:border-primary/30 transition-all"
           >
             <Phone size={18} className="text-primary" />
             <div>
@@ -46,11 +46,11 @@ const ContactSection = () => {
               <p className="text-sm">+91 83919 83177</p>
             </div>
           </a>
-          <div className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border">
+          <div className="flex items-center gap-3 p-4 rounded-xl bg-background border border-border">
             <MapPin size={18} className="text-primary" />
             <div>
               <p className="text-xs text-muted-foreground">Location</p>
-              <p className="text-sm">Kolkata, West Bengal</p>
+              <p className="text-sm">Katwa, West Bengal</p>
             </div>
           </div>
         </motion.div>
@@ -60,16 +60,14 @@ const ContactSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="flex items-center justify-center gap-4"
+          className="flex items-center justify-center gap-4 flex-wrap"
         >
           <a
-            href="https://github.com/subhadip-pan"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-surface border border-border hover:border-primary/50 text-sm transition-all"
           >
-            <Github size={16} />
-            GitHub
+            <Globe size={16} />
+            Portfolio
           </a>
           <a
             href="https://linkedin.com/in/subhadip-pan"
@@ -79,6 +77,15 @@ const ContactSection = () => {
           >
             <Linkedin size={16} />
             LinkedIn
+          </a>
+          <a
+            href="https://github.com/subhadip-pan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-surface border border-border hover:border-primary/50 text-sm transition-all"
+          >
+            <Github size={16} />
+            GitHub
           </a>
         </motion.div>
       </div>
