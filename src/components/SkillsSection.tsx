@@ -3,27 +3,27 @@ import { motion } from "framer-motion";
 const skillGroups = [
   {
     title: "Languages",
-    skills: ["Java", "SQL", "C++ (Basic)"],
-  },
-  {
-    title: "Backend & Frameworks",
-    skills: ["Spring Boot", "Spring MVC", "Spring Data JPA", "Hibernate", "REST APIs"],
-  },
-  {
-    title: "Databases",
-    skills: ["MySQL", "PostgreSQL"],
-  },
-  {
-    title: "Cloud & DevOps",
-    skills: ["AWS EC2", "AWS RDS", "Docker", "GitHub Actions", "Linux"],
-  },
-  {
-    title: "Tools",
-    skills: ["Git", "GitHub", "Maven", "IntelliJ IDEA", "Postman", "Swagger"],
+    skills: ["Java", "C++", "SQL"],
   },
   {
     title: "Web Tech",
-    skills: ["HTML", "CSS", "JSON"],
+    skills: ["HTML5", "CSS3", "React.js"],
+  },
+  {
+    title: "Backend / Frameworks",
+    skills: ["Spring Boot", "Spring MVC", "Spring Data JPA", "Hibernate", "REST APIs"],
+  },
+  {
+    title: "Cloud / DevOps",
+    skills: ["AWS EC2", "AWS RDS", "Docker", "GitHub Actions (CI)", "Linux"],
+  },
+  {
+    title: "Database",
+    skills: ["MySQL", "PostgreSQL", "MongoDB", "SSMS"],
+  },
+  {
+    title: "Tools",
+    skills: ["Git", "GitHub", "VS Code", "Maven", "IntelliJ IDEA", "Eclipse", "Postman", "Swagger (OpenAPI)"],
   },
 ];
 
