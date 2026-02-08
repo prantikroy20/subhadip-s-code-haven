@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, MapPin, ArrowDown, Phone, Globe } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import profilePhoto from "@/assets/profile-photo.jpeg";
 
 const HeroSection = () => {
   return (
@@ -17,6 +18,14 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
+          <div className="mb-6">
+            <img
+              src={profilePhoto}
+              alt="Subhadip Pan"
+              className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto object-cover border-4 border-primary/30 shadow-xl"
+            />
+          </div>
+
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-surface mb-8">
             <MapPin size={14} className="text-primary" />
             <span className="text-sm text-muted-foreground">Katwa, West Bengal, India</span>
@@ -37,11 +46,11 @@ const HeroSection = () => {
 
           <div className="flex items-center justify-center gap-4 flex-wrap mb-6">
             <a
-              href="mailto:noton8520@gmail.com"
+              href="mailto:subhadip.pan04@gmail.com"
               className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail size={16} />
-              noton8520@gmail.com
+              subhadip.pan04@gmail.com
             </a>
             <a
               href="tel:+918391983177"
@@ -61,7 +70,7 @@ const HeroSection = () => {
               <Globe size={20} />
             </a>
             <a
-              href="https://linkedin.com/in/subhadip-pan"
+              href="https://www.linkedin.com/in/subhadippan-sp"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-lg bg-surface hover:bg-surface-hover border border-border hover:border-primary/50 transition-all"
@@ -70,7 +79,7 @@ const HeroSection = () => {
               <Linkedin size={20} />
             </a>
             <a
-              href="https://github.com/subhadip-pan"
+              href="https://github.com/subhadip-pan09"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-lg bg-surface hover:bg-surface-hover border border-border hover:border-primary/50 transition-all"
